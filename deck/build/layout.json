@@ -9832,7 +9832,7 @@
     "sel": "name",
     "box": {
      "x": 547.95,
-     "y": 233,
+     "y": 245.5,
      "w": 824.08,
      "h": 117
     },
@@ -9871,7 +9871,7 @@
     "sel": "cred",
     "box": {
      "x": 426.14,
-     "y": 368,
+     "y": 380.5,
      "w": 1067.7,
      "h": 37
     },
@@ -9907,26 +9907,26 @@
     ]
    },
    {
-    "sel": "handles",
+    "sel": "cap",
     "box": {
-     "x": 434.73,
-     "y": 439,
-     "w": 1050.53,
-     "h": 39
+     "x": 276,
+     "y": 705.5,
+     "w": 300,
+     "h": 27
     },
-    "size": 32,
-    "line": 38.4,
+    "size": 22,
+    "line": 26.4,
     "serif": false,
     "italic": false,
-    "weight": 400,
+    "weight": 600,
     "colour": [
      138,
      106,
      28
     ],
     "align": "center",
-    "caps": false,
-    "track": 1.92,
+    "caps": true,
+    "track": 4.4,
     "pad": [
      0,
      0,
@@ -9935,8 +9935,8 @@
     ],
     "runs": [
      {
-      "t": "@drnadeenkabbouraofficial \u00b7 nadeenkabboura@gmail.com",
-      "b": false,
+      "t": "Snapchat",
+      "b": true,
       "c": [
        138,
        106,
@@ -9946,50 +9946,11 @@
     ]
    },
    {
-    "sel": "cap",
-    "box": {
-     "x": 319.7,
-     "y": 792,
-     "w": 683.73,
-     "h": 32
-    },
-    "size": 26,
-    "line": 31.2,
-    "serif": false,
-    "italic": false,
-    "weight": 600,
-    "colour": [
-     69,
-     63,
-     53
-    ],
-    "align": "center",
-    "caps": true,
-    "track": 5.2,
-    "pad": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "runs": [
-     {
-      "t": "Full bibliography",
-      "b": true,
-      "c": [
-       69,
-       63,
-       53
-      ]
-     }
-    ]
-   },
-   {
     "sel": "url",
     "box": {
-     "x": 319.7,
-     "y": 834,
-     "w": 683.73,
+     "x": 276,
+     "y": 740.5,
+     "w": 300,
      "h": 24
     },
     "size": 20,
@@ -9998,9 +9959,9 @@
     "italic": false,
     "weight": 300,
     "colour": [
-     124,
-     115,
-     101
+     69,
+     63,
+     53
     ],
     "align": "center",
     "caps": false,
@@ -10013,48 +9974,9 @@
     ],
     "runs": [
      {
-      "t": "rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html",
+      "t": "snapchat.com/t/YjYmNOnn",
       "b": false,
       "c": [
-       124,
-       115,
-       101
-      ]
-     }
-    ]
-   },
-   {
-    "sel": "cap",
-    "box": {
-     "x": 1123.44,
-     "y": 792,
-     "w": 476.86,
-     "h": 32
-    },
-    "size": 26,
-    "line": 31.2,
-    "serif": false,
-    "italic": false,
-    "weight": 600,
-    "colour": [
-     69,
-     63,
-     53
-    ],
-    "align": "center",
-    "caps": true,
-    "track": 5.2,
-    "pad": [
-     0,
-     0,
-     0,
-     0
-    ],
-    "runs": [
-     {
-      "t": "Lecture resources",
-      "b": true,
-      "c": [
        69,
        63,
        53
@@ -10063,11 +9985,50 @@
     ]
    },
    {
+    "sel": "cap",
+    "box": {
+     "x": 632,
+     "y": 705.5,
+     "w": 300,
+     "h": 27
+    },
+    "size": 22,
+    "line": 26.4,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.4,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Instagram",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
     "sel": "url",
     "box": {
-     "x": 1123.44,
-     "y": 834,
-     "w": 476.86,
+     "x": 632,
+     "y": 740.5,
+     "w": 300,
      "h": 24
     },
     "size": 20,
@@ -10076,9 +10037,9 @@
     "italic": false,
     "weight": 300,
     "colour": [
-     124,
-     115,
-     101
+     69,
+     63,
+     53
     ],
     "align": "center",
     "caps": false,
@@ -10091,7 +10052,202 @@
     ],
     "runs": [
      {
-      "t": "rayan-debug.github.io/The-Intimate-Ecosystem/",
+      "t": "@drnadeenkabbouraofficial",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap",
+    "box": {
+     "x": 988,
+     "y": 705.5,
+     "w": 300,
+     "h": 27
+    },
+    "size": 22,
+    "line": 26.4,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.4,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "WhatsApp",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "url",
+    "box": {
+     "x": 988,
+     "y": 740.5,
+     "w": 300,
+     "h": 24
+    },
+    "size": 20,
+    "line": 24,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "+966 53 542 7630",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "cap",
+    "box": {
+     "x": 1344,
+     "y": 705.5,
+     "w": 300,
+     "h": 27
+    },
+    "size": 22,
+    "line": 26.4,
+    "serif": false,
+    "italic": false,
+    "weight": 600,
+    "colour": [
+     138,
+     106,
+     28
+    ],
+    "align": "center",
+    "caps": true,
+    "track": 4.4,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Email",
+      "b": true,
+      "c": [
+       138,
+       106,
+       28
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "url",
+    "box": {
+     "x": 1344,
+     "y": 740.5,
+     "w": 300,
+     "h": 24
+    },
+    "size": 20,
+    "line": 24,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     69,
+     63,
+     53
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "nadeenkabboura@gmail.com",
+      "b": false,
+      "c": [
+       69,
+       63,
+       53
+      ]
+     }
+    ]
+   },
+   {
+    "sel": "biblio",
+    "box": {
+     "x": 517.02,
+     "y": 822.5,
+     "w": 885.97,
+     "h": 23
+    },
+    "size": 19,
+    "line": 22.8,
+    "serif": false,
+    "italic": false,
+    "weight": 300,
+    "colour": [
+     124,
+     115,
+     101
+    ],
+    "align": "center",
+    "caps": false,
+    "track": 0.76,
+    "pad": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "runs": [
+     {
+      "t": "Full bibliography \u00b7 rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html",
       "b": false,
       "c": [
        124,
@@ -10222,26 +10378,46 @@
    {
     "i": 0,
     "box": {
-     "x": 546.56,
-     "y": 542,
-     "w": 230,
-     "h": 230
+     "x": 331,
+     "y": 493.5,
+     "w": 190,
+     "h": 190
     },
     "file": "s14-0.png"
    },
    {
     "i": 1,
     "box": {
-     "x": 1246.86,
-     "y": 542,
-     "w": 230,
-     "h": 230
+     "x": 687,
+     "y": 493.5,
+     "w": 190,
+     "h": 190
     },
     "file": "s14-1.png"
+   },
+   {
+    "i": 2,
+    "box": {
+     "x": 1043,
+     "y": 493.5,
+     "w": 190,
+     "h": 190
+    },
+    "file": "s14-2.png"
+   },
+   {
+    "i": 3,
+    "box": {
+     "x": 1399,
+     "y": 493.5,
+     "w": 190,
+     "h": 190
+    },
+    "file": "s14-3.png"
    }
   ],
   "notes": [
-   "Leave this slide up through questions. The left code opens the full reference list for every claim made in the lecture; the right opens the longer teaching resource.",
+   "Leave this slide up through questions. The four codes open Snapchat, Instagram, WhatsApp and email; the full reference list for every claim is linked underneath.",
    "If time has run short, the three slides worth returning to in discussion are Hart\u2019s line, the inflammation\u2013pigment cycle and the evidence spectrum."
   ],
   "n": 14

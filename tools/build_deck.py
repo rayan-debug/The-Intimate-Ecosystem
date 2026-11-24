@@ -28,8 +28,15 @@ EMAIL = "nadeenkabboura@gmail.com"
 VENUE = "Conference · Session · Date"
 
 SITE = "https://rayan-debug.github.io/The-Intimate-Ecosystem"
-QR_REFERENCES = SITE + "/deck/references.html"
-QR_RESOURCES = SITE + "/"
+BIBLIOGRAPHY = SITE + "/deck/references.html"
+
+# the closing contact codes, the same as The Majora Code's closing slide
+CONTACTS = [
+    ("snapchat",  "Snapchat",  "snapchat.com/t/YjYmNOnn"),
+    ("instagram", "Instagram", INSTAGRAM),
+    ("whatsapp",  "WhatsApp",  "+966 53 542 7630"),
+    ("email",     "Email",     EMAIL),
+]
 
 DECK_TITLE = "Tissue-Specific Intimate Medicine"
 
@@ -551,20 +558,17 @@ def slides():
   <main>
     <p class="name">{SPEAKER}</p>
     <p class="cred">{CREDENTIALS}</p>
-    <p class="handles">{INSTAGRAM} · {EMAIL}</p>
     <div class="qrs">
-      <div class="qr">{(DECK / "qr" / "references.svg").read_text()}
-        <div class="cap">Full bibliography</div>
-        <div class="url">{QR_REFERENCES.replace("https://", "")}</div></div>
-      <div class="qr">{(DECK / "qr" / "resources.svg").read_text()}
-        <div class="cap">Lecture resources</div>
-        <div class="url">{QR_RESOURCES.replace("https://", "")}</div></div>
-    </div>
+{"".join(f'''      <div class="qr">{(DECK / "qr" / (key + ".svg")).read_text()}
+        <div class="cap">{label}</div>
+        <div class="url">{value}</div></div>
+''' for key, label, value in CONTACTS)}    </div>
+    <p class="biblio">Full bibliography · {BIBLIOGRAPHY.replace("https://", "")}</p>
   </main>
   {foot("", "", 14)}
   {notes(
-    "Leave this slide up through questions. The left code opens the full reference list "
-    "for every claim made in the lecture; the right opens the longer teaching resource.",
+    "Leave this slide up through questions. The four codes open Snapchat, Instagram, "
+    "WhatsApp and email; the full reference list for every claim is linked underneath.",
     "If time has run short, the three slides worth returning to in discussion are Hart’s "
     "line, the inflammation–pigment cycle and the evidence spectrum.")}
 </section>"""))

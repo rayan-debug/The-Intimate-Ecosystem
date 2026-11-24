@@ -182,7 +182,20 @@
      transition:transform .3s, box-shadow .3s, border-color .3s; }
   .qrcard:hover{ transform:translateY(-3px); border-color:var(--gold); box-shadow:0 20px 44px rgba(120,100,50,.18); }
   .qwrap{ position:relative; width:132px; height:132px; }
-  .qwrap canvas{ width:132px; height:132px; display:block; border-radius:6px; }
+  .qwrap canvas, .qwrap img{ width:132px; height:132px; display:block; border-radius:6px; }
+  .qtext{ display:flex; flex-direction:column; align-items:center; gap:10px; min-width:0; }
+  .teye{ display:block; text-align:center; }
+  /* contact cards: the code on the left, the channel and handle beside it, on one line */
+  #thanks .qrow{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:30px; }
+  #thanks .qrcard{ width:auto; flex-direction:row; align-items:center; gap:16px; padding:12px 14px 12px 12px; text-align:left; }
+  #thanks .qwrap, #thanks .qwrap img{ width:96px; height:96px; flex:none; }
+  #thanks .qtext{ align-items:flex-start; gap:6px; }
+  #thanks .qval{ font-size:12px; overflow-wrap:normal; white-space:nowrap; }
+  @media(max-width:560px){
+    #thanks .qrow{ grid-template-columns:minmax(0,1fr); gap:10px; margin-top:24px; }
+    #thanks .qwrap, #thanks .qwrap img{ width:84px; height:84px; }
+    #thanks .qrcard{ width:auto; padding:10px 14px 10px 10px; }
+  }
   .qlabel{ font-family:var(--sans); font-weight:600; letter-spacing:.14em; text-transform:uppercase; font-size:11px; color:var(--gold-deep); }
   .qval{ font-family:var(--sans); font-weight:300; font-size:11.5px; color:var(--muted); overflow-wrap:anywhere; line-height:1.35; }
   .tnote{ margin-top:26px; font-family:var(--sans); font-weight:300; font-size:12.5px; letter-spacing:.02em; color:var(--muted); }
@@ -315,6 +328,22 @@
   .tphoto{ width:min(190px,calc(42 * var(--vw))); border:1px solid var(--line); border-radius:10px; overflow:hidden;
      background:#fff; box-shadow:0 14px 34px rgba(120,100,50,.14); }
   .tphoto img{ display:block; width:100%; aspect-ratio:3/4; object-fit:cover; }
+
+  /* closing page on laptops and larger: photographs left, words and codes right, one screen */
+  @media (min-width:1100px) and (min-height:640px){
+    #thanks .tinner{ display:flex; align-items:center; justify-content:center; gap:76px; width:min(1240px,94vw); text-align:left; }
+    #thanks .tphotos{ position:relative; flex:none; width:372px; height:500px; margin:0; }
+    #thanks .tphoto{ position:absolute; width:258px; border-radius:12px; box-shadow:0 24px 60px rgba(120,100,50,.20); }
+    #thanks .tphoto:nth-child(1){ left:0; top:0; transform:rotate(-2.5deg); z-index:1; }
+    #thanks .tphoto:nth-child(2){ right:0; bottom:0; transform:rotate(2deg); border:6px solid #fff; box-shadow:0 0 0 1px var(--line), 0 28px 64px rgba(120,100,50,.24); z-index:2; }
+    #thanks .tbody{ flex:0 1 720px; min-width:0; }
+    #thanks .teye{ text-align:left; }
+    #thanks .ttitle{ margin-top:12px; }
+    #thanks .rule{ margin:20px 0; background:linear-gradient(90deg,var(--gold),transparent); }
+    #thanks .tname{ margin-top:0; }
+    .tnote{ margin-top:22px; }
+    .tlinks{ justify-content:flex-start; margin-top:14px; }
+  }
 </style>
 </head>
 <body>
@@ -384,7 +413,8 @@
           <div class="tphoto"><img src="media/conf-1.webp" alt="Dr. Nadeen Kabboura at the Cosmetic Gynecology Conference" loading="lazy"></div>
           <div class="tphoto"><img src="media/conf-2.webp" alt="Dr. Nadeen Kabboura with faculty at the Cosmetic Gynecology Conference" loading="lazy"></div>
         </div>
-        <div class="eyebrow" style="display:block;text-align:center">With Gratitude</div>
+        <div class="tbody">
+        <div class="eyebrow teye">With Gratitude</div>
         <h2 class="ttitle">Thank You</h2>
         <div class="rule"></div>
         <div class="tname">Dr. Nadeen Kabboura</div>
@@ -392,6 +422,7 @@
         <div class="qrow" id="qrow"></div>
         <div class="tnote">Scan a code, or tap a card to connect.</div>
         <div class="tlinks"><button class="btn" id="tfilm">← Back to the film</button><button class="btn" id="tback">↑ Return to the hub</button></div>
+        </div>
       </div>
     </div>
 
@@ -3266,32 +3297,24 @@ var qrcode = function() {
   }
   /* ---- contacts → QR codes (icon centered, link beneath) ---- */
   const SOCIALS=[
-    {label:'Snapchat',  val:'snapchat.com/t/YjYmNOnn',   url:'https://snapchat.com/t/YjYmNOnn'},
-    {label:'Instagram', val:'@drnadeenkabbouraofficial', url:'https://instagram.com/drnadeenkabbouraofficial'},
-    {label:'WhatsApp',  val:'+966 53 542 7630',          url:'https://wa.me/966535427630'},
-    {label:'Email',     val:'nadeenkabboura@gmail.com',  url:'mailto:nadeenkabboura@gmail.com'},
+    {label:'Snapchat',  val:'snapchat.com/t/YjYmNOnn',   url:'https://snapchat.com/t/YjYmNOnn',               qr:'media/qr/snapchat.svg'},
+    {label:'Instagram', val:'@drnadeenkabbouraofficial', url:'https://instagram.com/drnadeenkabbouraofficial', qr:'media/qr/instagram.svg'},
+    {label:'WhatsApp',  val:'+966 53 542 7630',          url:'https://wa.me/966535427630',                   qr:'media/qr/whatsapp.svg'},
+    {label:'Email',     val:'nadeenkabboura@gmail.com',  url:'mailto:nadeenkabboura@gmail.com',              qr:'media/qr/email.svg'},
   ];
   let qrsBuilt=false;
   function buildQRs(){
-    if(qrsBuilt || !qrow || typeof qrcode!=='function') return; qrsBuilt=true;
+    if(qrsBuilt || !qrow) return; qrsBuilt=true;
     SOCIALS.forEach(s=>{
       const a=document.createElement('a'); a.className='qrcard'; a.href=s.url; a.target='_blank'; a.rel='noopener';
       const w=document.createElement('div'); w.className='qwrap';
-      const cv=document.createElement('canvas'); w.appendChild(cv);   // code only — no emoji badge over it
+      // the same QR codes as The Majora Code's closing slide, saved as vector files
+      const im=document.createElement('img'); im.src=s.qr+'?v=2'; im.alt='QR code for '+s.label; im.width=132; im.height=132; w.appendChild(im);
+      const tx=document.createElement('div'); tx.className='qtext';
       const lb=document.createElement('div'); lb.className='qlabel'; lb.textContent=s.label;
       const vl=document.createElement('div'); vl.className='qval'; vl.textContent=s.val;
-      a.appendChild(w); a.appendChild(lb); a.appendChild(vl); qrow.appendChild(a);
-      try{ makeQR(cv, s.url); }catch(e){ w.style.display='none'; }
+      tx.appendChild(lb); tx.appendChild(vl); a.appendChild(w); a.appendChild(tx); qrow.appendChild(a);
     });
-  }
-  function makeQR(canvas, text){
-    const qr=qrcode(0,'Q'); qr.addData(text); qr.make();
-    const n=qr.getModuleCount(), quiet=4, total=n+quiet*2, px=132, dpr=Math.min((window.devicePixelRatio||1)*(window.__S||1),4);
-    canvas.width=px*dpr; canvas.height=px*dpr; canvas.style.width=px+'px'; canvas.style.height=px+'px';
-    const g=canvas.getContext('2d'); g.scale(dpr,dpr); const cell=px/total;
-    g.fillStyle='#FDFBF6'; g.fillRect(0,0,px,px);
-    g.fillStyle='#33302A';
-    for(let r=0;r<n;r++) for(let c=0;c<n;c++){ if(qr.isDark(r,c)) g.fillRect((c+quiet)*cell,(r+quiet)*cell, cell+0.6, cell+0.6); }
   }
 
   /* ============================ INPUT ============================ */

@@ -254,12 +254,13 @@ html.no-anim .slide.on > *{ animation:none; }
 .closing .name{ font-family:var(--serif); font-size:96px; font-weight:600; color:var(--ink); }
 .closing .cred{ margin-top:18px; font-size:30px; font-weight:300; letter-spacing:.06em; color:var(--muted); }
 .closing .handles{ margin-top:34px; font-size:32px; font-weight:400; color:var(--gold-deep); letter-spacing:.06em; }
-.closing .qrs{ display:flex; gap:120px; margin-top:64px; }
-.closing .qr{ text-align:center; }
-.closing .qr svg{ width:230px; height:230px; display:block; margin:0 auto; }
-.closing .qr .cap{ margin-top:20px; font-size:26px; font-weight:600; letter-spacing:.2em;
-  text-transform:uppercase; color:var(--ink-2); }
-.closing .qr .url{ margin-top:10px; font-size:20px; font-weight:300; color:var(--muted); }
+.closing .qrs{ display:flex; justify-content:center; gap:56px; margin-top:76px; }
+.closing .qr{ text-align:center; width:300px; }
+.closing .qr svg{ width:190px; height:190px; display:block; margin:0 auto; }
+.closing .qr .cap{ margin-top:22px; font-size:22px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--gold-deep); }
+.closing .qr .url{ margin-top:8px; font-size:20px; font-weight:300; color:var(--ink-2); white-space:nowrap; }
+.closing .biblio{ margin-top:58px; font-size:19px; font-weight:300; letter-spacing:.04em; color:var(--muted); }
 
 /* ---- chrome: progress, notes, index ----------------------------------- */
 #progress{ position:fixed; left:0; bottom:0; height:3px; background:var(--gold); width:0;

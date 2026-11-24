@@ -18,8 +18,8 @@ device-driven.
 | `export/Tissue-Specific-Intimate-Medicine.pdf` | PDF backup, 14 pages, 16:9. |
 | `export/slide-NN.png` | 3840 × 2160 PNG of every slide. |
 | `illustrations/*.svg` | The six commissioned illustrations plus the title plate, as editable vector. |
-| `references.html` | The full bibliography the closing QR code points at. |
-| `qr/*.svg` | The two closing QR codes, as vector. |
+| `references.html` | The full bibliography, linked on the closing slide. |
+| `qr/*.svg` | The four closing contact QR codes (Snapchat, Instagram, WhatsApp, email), the same codes as The Majora Code's closing slide. |
 | `fonts/*.ttf` | Cormorant Garamond and Montserrat, for the PowerPoint file. |
 | `build/` | Intermediate layout manifest and figure rasters used to build the PPTX. |
 
@@ -58,11 +58,10 @@ These are the only placeholders in the deck. All four live at the top of
    Regenerative Medicine”*. Replace with the exact post-nominals you want shown
    on slides 1 and 14.
 2. **`VENUE`** — currently *“Conference · Session · Date”* on the title slide.
-3. **`SITE`** — the QR codes point at `rayan-debug.github.io/The-Intimate-Ecosystem`. **This
-   URL has not been verified from here.** Publish GitHub Pages for this
-   repository (Settings → Pages → deploy from `main`), then scan both codes
-   before you travel. Both URLs are also printed in plain text under the codes,
-   so a failed scan is not a failed slide.
+3. **`CONTACTS`** — the closing slide shows four contact QR codes (Snapchat,
+   Instagram, WhatsApp, email), copied from The Majora Code's closing slide into
+   `deck/qr/`. Each handle is also printed under its code, so a failed scan is
+   not a failed slide. `SITE` sets the bibliography link printed beneath them.
 4. **Slide 11** places five therapy classes along an evidence spectrum. The
    ordering is a defensible clinical reading, not a published ranking — confirm
    you are happy to defend each position from the podium.
@@ -95,7 +94,7 @@ two abbreviated references in the footer:
   a guideline.
 
 No claim on a slide is stronger than its chip. The full bibliography is in
-`references.html` and behind the closing QR code.
+`references.html`, linked on the closing slide.
 
 ## Rebuilding
 

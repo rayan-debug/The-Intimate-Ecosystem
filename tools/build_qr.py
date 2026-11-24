@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
-"""Generate the two closing-slide QR codes as charcoal-on-transparent SVG."""
+"""Check the four closing-slide contact QR codes.
+
+The codes are the same ones shown on The Majora Code's closing slide
+(rayan-debug/The-Majora-Code, assets/qr/), copied into deck/qr/ in the deck's
+charcoal on a transparent ground. This step only confirms they are present; to
+change a link, replace the file with a new code for that link.
+"""
 
 import pathlib
-import segno
+import re
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / "deck" / "qr"
-
-TARGETS = {
-    "references": "https://rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html",
-    "resources": "https://rayan-debug.github.io/The-Intimate-Ecosystem/",
-}
+QR = ROOT / "deck" / "qr"
+CODES = ["snapchat", "instagram", "whatsapp", "email"]
 
 if __name__ == "__main__":
-    OUT.mkdir(parents=True, exist_ok=True)
-    print("qr ->", OUT)
-    for name, url in TARGETS.items():
-        qr = segno.make(url, error="m")
-        p = OUT / f"{name}.svg"
-        qr.save(str(p), kind="svg", dark="#2E2B26", light=None, border=2,
-                omitsize=True, xmldecl=False, svgclass=None, lineclass=None)
-        print(f"  {name+'.svg':20s} {qr.designator:>6s}  {url}")
+    missing = [n for n in CODES if not (QR / f"{n}.svg").exists()]
+    if missing:
+        sys.exit("missing QR codes: " + ", ".join(missing))
+    for n in CODES:
+        t = re.search(r"<title>([^<]*)", (QR / f"{n}.svg").read_text())
+        print(f"  {n + '.svg':16s} {t.group(1) if t else ''}")

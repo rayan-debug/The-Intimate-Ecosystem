@@ -6,7 +6,7 @@ Live site: **https://rayan-debug.github.io/The-Intimate-Ecosystem/**
 |---|---|
 | *The Intimate Ecosystem*, the scrolling web presentation | [`/`](index.html) · https://rayan-debug.github.io/The-Intimate-Ecosystem/ |
 | *Tissue-Specific Intimate Medicine*, the 14-slide conference deck | [`deck/`](deck/) · https://rayan-debug.github.io/The-Intimate-Ecosystem/deck/ |
-| Full bibliography (the deck's closing QR code) | [`deck/references.html`](deck/references.html) · https://rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html |
+| Full bibliography (linked on the deck's closing slide) | [`deck/references.html`](deck/references.html) · https://rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html |
 | The eleven chapter illustrations | [`art/`](art/) · https://rayan-debug.github.io/The-Intimate-Ecosystem/art/ |
 
 The deck also comes as an editable PowerPoint
@@ -18,5 +18,5 @@ for presenting controls and [`art/README.md`](art/README.md) for the illustratio
 Rebuild every deck file with `python3 tools/build_all.py` (needs `segno`, `python-pptx`,
 `Pillow` and `playwright`).
 
-Moved here from `rayan-debug/nadine-` (now `The-Majora-Code`) (`archive/v1-intimate-ecosystem/`). The deck's QR
-codes now point at this repository's GitHub Pages site.
+Moved here from `rayan-debug/nadine-` (now `The-Majora-Code`, `archive/v1-intimate-ecosystem/`).
+The closing contact QR codes on the website and the deck are the same as The Majora Code's.

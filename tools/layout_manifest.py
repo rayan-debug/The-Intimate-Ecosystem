@@ -31,7 +31,7 @@ TEXT_SEL = ", ".join([
     ".cascade .cell", ".categories .cat b", ".categories .cat span",
     ".spectrum .cap", ".spectrum .mk .t",
     ".takehome .n", ".takehome .t",
-    ".closing .name", ".closing .cred", ".closing .handles",
+    ".closing .name", ".closing .cred", ".closing .handles", ".closing .biblio",
     ".qr .cap", ".qr .url",
 ])
 
