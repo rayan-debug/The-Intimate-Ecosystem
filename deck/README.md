@@ -58,7 +58,7 @@ These are the only placeholders in the deck. All four live at the top of
    Regenerative Medicine”*. Replace with the exact post-nominals you want shown
    on slides 1 and 14.
 2. **`VENUE`** — currently *“Conference · Session · Date”* on the title slide.
-3. **`SITE`** — the QR codes point at `rayan-debug.github.io/Nadine`. **This
+3. **`SITE`** — the QR codes point at `rayan-debug.github.io/The-Intimate-Ecosystem`. **This
    URL has not been verified from here.** Publish GitHub Pages for this
    repository (Settings → Pages → deploy from `main`), then scan both codes
    before you travel. Both URLs are also printed in plain text under the codes,

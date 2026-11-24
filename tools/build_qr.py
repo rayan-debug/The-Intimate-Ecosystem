@@ -8,8 +8,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "deck" / "qr"
 
 TARGETS = {
-    "references": "https://rayan-debug.github.io/Nadine/deck/references.html",
-    "resources": "https://rayan-debug.github.io/Nadine/",
+    "references": "https://rayan-debug.github.io/The-Intimate-Ecosystem/deck/references.html",
+    "resources": "https://rayan-debug.github.io/The-Intimate-Ecosystem/",
 }
 
 if __name__ == "__main__":

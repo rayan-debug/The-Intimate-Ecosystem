@@ -256,7 +256,7 @@ html.no-anim .slide.on > *{ animation:none; }
 .closing .handles{ margin-top:34px; font-size:32px; font-weight:400; color:var(--gold-deep); letter-spacing:.06em; }
 .closing .qrs{ display:flex; gap:120px; margin-top:64px; }
 .closing .qr{ text-align:center; }
-.closing .qr svg{ width:230px; height:230px; display:block; }
+.closing .qr svg{ width:230px; height:230px; display:block; margin:0 auto; }
 .closing .qr .cap{ margin-top:20px; font-size:26px; font-weight:600; letter-spacing:.2em;
   text-transform:uppercase; color:var(--ink-2); }
 .closing .qr .url{ margin-top:10px; font-size:20px; font-weight:300; color:var(--muted); }

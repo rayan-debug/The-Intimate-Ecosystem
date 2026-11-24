@@ -27,7 +27,7 @@ INSTAGRAM = "@drnadeenkabbouraofficial"
 EMAIL = "nadeenkabboura@gmail.com"
 VENUE = "Conference · Session · Date"
 
-SITE = "https://rayan-debug.github.io/Nadine"
+SITE = "https://rayan-debug.github.io/The-Intimate-Ecosystem"
 QR_REFERENCES = SITE + "/deck/references.html"
 QR_RESOURCES = SITE + "/"
 
